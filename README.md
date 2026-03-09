@@ -2,17 +2,4 @@
 
 A minimalist portfolio built with React.
 
-## Setup
-
-```bash
-npm install
-npm start
-```
-
-Opens at `http://localhost:3000`
-
-## Deploy
-
-```bash
-npm run deploy
-```
+**[View live site →](https://dmontoya25.github.io/portfolio)**
