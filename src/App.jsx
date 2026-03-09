@@ -72,8 +72,7 @@ function App() {
       title: "N-Body Gravity Simulator",
       description: "Real-time physics simulation of celestial bodies interacting through gravitational forces. Features orbital trail visualization and procedurally-driven calculations.",
       tech: ["Python", "Pygame", "NumPy"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/dmontoya25/n-body-gravity-sim",
       featured: true
     },
     {
@@ -81,7 +80,6 @@ function App() {
       description: "Machine learning–based detection of exoplanet transit signals when a planet passes in front of its host star.",
       tech: ["Python", "Jupyter Notebook", "NumPy", "Sci-kit learn", "Astropy"],
       github: "https://github.com/dmontoya25/exoplanet-transit-detection",
-      demo: "#",
       featured: true
     },
     {
@@ -206,10 +204,12 @@ function App() {
                     <Github size={18} />
                     Code
                   </a>
-                  <a href={project.demo} className="project-link" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink size={18} />
-                    Demo
-                  </a>
+                  {project.demo && (
+                    <a href={project.demo} className="project-link" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={18} />
+                      Demo
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
